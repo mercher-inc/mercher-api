@@ -1,42 +1,49 @@
 {
-  "name": "mercher-api",
-  "version": "0.0.0",
-  "main": "lib/mercher-api.js",
-  "description": "The best module ever.",
-  "homepage": "http://mercher.net/",
-  "bugs": "https://github.com/mercher-inc/mercher-api/issues",
-  "author": {
-    "name": "Mercher Inc.",
-    "email": "support@mercher.net",
-    "url": "http://mercher.net/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mercher-inc/mercher-api"
-  },
-  "license": "MIT",
-  "files": [
-    "lib"
-  ],
-  "keywords": [
-    "mercher-api",
-    ""
-  ],
-  "devDependencies": {
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-contrib-nodeunit": "^0.3.3",
-    "grunt-contrib-watch": "^0.6.1",
-    "load-grunt-tasks": "^0.4.0",
-    "time-grunt": "^0.3.1",
-    "jshint-stylish": "^0.2.0",
-    "browserify": "^4.1.3"
-  },
-  "scripts": {
-    "test": "grunt",
-    "browser": "browserify lib/mercher-api.js > browser.js"
-  },
-  "bin": {
-    "mercher-api": "cli.js"
-  },
-  "preferGlobal": "true"
+    "name":            "mercher-api",
+    "version":         "0.0.0",
+    "main":            "lib/mercher-api.js",
+    "description":     "The best module ever.",
+    "homepage":        "http://mercher.net/",
+    "bugs":            "https://github.com/mercher-inc/mercher-api/issues",
+    "author":          {
+        "name":  "Mercher Inc.",
+        "email": "support@mercher.net",
+        "url":   "http://mercher.net/"
+    },
+    "repository":      {
+        "type": "git",
+        "url":  "https://github.com/mercher-inc/mercher-api"
+    },
+    "license":         "MIT",
+    "files":           [
+        "lib"
+    ],
+    "keywords":        [
+        "mercher-api",
+        ""
+    ],
+    "devDependencies": {
+        "grunt-contrib-jshint":   "^0.10.0",
+        "grunt-contrib-nodeunit": "^0.3.3",
+        "grunt-contrib-watch":    "^0.6.1",
+        "load-grunt-tasks":       "^0.4.0",
+        "time-grunt":             "^0.3.1",
+        "jshint-stylish":         "^0.2.0",
+        "browserify":             "^4.1.3"
+
+    },
+    "dependencies":    {
+        "express":   "^4.7.2",
+        "knex":      "^0.6.22",
+        "bookshelf": "^0.7.7",
+        "pg":        "^3.4.0"
+    },
+    "scripts":         {
+        "test":    "grunt",
+        "browser": "browserify lib/mercher-api.js > browser.js"
+    },
+    "bin":             {
+        "mercher-api": "cli.js"
+    },
+    "preferGlobal":    "true"
 }
