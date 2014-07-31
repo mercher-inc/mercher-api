@@ -89,6 +89,10 @@ io.on('connection', function (socket) {
     socket.on('disconnect', function(){
         console.log('user disconnected', socket.id);
     });
+
+    socket.on('app_started', function(socket){
+        console.log('app started', socket.id);
+    });
 });
 
 module.exports = app;
